@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body{
+    background-image: url("./img/images/background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 1140px;
+    margin: 0px auto;
+}
+
+/* ----------------Navbar qismi ------------------ */
+
+.nav-href{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+}
+
+[navbar]{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#nav-btn{
+    padding: 20px 35.5px;
+    border-radius: 10px;
+    border: 1px solid #FE8C05;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FE8C05;
+    background-color: transparent;
+    cursor: url(img/images/cursor.png),auto;
+}
+
+.nav-list > li:nth-child(1) a:hover{
+    color: rgb(200, 255, 0);
+}
+.nav-list > li:nth-child(2) a:hover{
+    color: red;
+}
+.nav-list > li:nth-child(3) a:hover{
+    color: yellow;
+}
+.nav-list > li:nth-child(4) a:hover{
+    color: rgb(255, 0, 230);
+}
