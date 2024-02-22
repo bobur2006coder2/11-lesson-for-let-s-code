@@ -1,66 +1,248 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
     font-family: "Josefin Sans", sans-serif;
+
 }
 
-body{
-    background-image: url("./img/images/background-image.jpg");
+:root {
+    --orange-color: #F48400;
+    --font-one: "Inter", sans-serif;
+    --font-two: "Josefin Sans", sans-serif;
+
+}
+
+body {
+    /* background-image: url("https://sayt-two.vercel.app/images/gta%20v.jpg"); */
+    /* background-image: url("./img/images/background-image.jpg"); */
+    background-image: url('./img/images/i\ 2.svg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.container{
+.container {
     width: 1140px;
     margin: 0px auto;
 }
 
 /* ----------------Navbar qismi ------------------ */
 
-.nav-href{
+.nav-href {
     color: white;
     text-decoration: none;
 }
 
-.nav-list{
+.nav-list {
     list-style: none;
     display: flex;
     align-items: center;
     column-gap: 60px;
 }
 
-[navbar]{
+[navbar] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 10px;
+    padding-top: 10px;
 }
-#nav-btn{
+
+#nav-btn {
     padding: 20px 35.5px;
     border-radius: 10px;
-    border: 1px solid #FE8C05;
+    border: 1px solid var(--orange-color);
     text-transform: uppercase;
     font-family: "Josefin Sans", sans-serif;
     font-size: 14px;
     font-weight: 700;
-    color: #FE8C05;
+    color: var(--orange-color);
     background-color: transparent;
-    cursor: url(img/images/cursor.png),auto;
+    cursor: url(img/images/cursor.png), auto;
 }
 
-.nav-list > li:nth-child(1) a:hover{
+.nav-list>li:nth-child(1) a:hover {
     color: rgb(200, 255, 0);
 }
-.nav-list > li:nth-child(2) a:hover{
+
+.nav-list>li:nth-child(2) a:hover {
     color: red;
 }
-.nav-list > li:nth-child(3) a:hover{
+
+.nav-list>li:nth-child(3) a:hover {
     color: yellow;
 }
-.nav-list > li:nth-child(4) a:hover{
+
+.nav-list>li:nth-child(4) a:hover {
     color: rgb(255, 0, 230);
+}
+
+/* -----------Header qismi -------------------------------- */
+
+.headerSection {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-top-text-one {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 74px;
+    font-weight: 700;
+    line-height: 74px;
+    letter-spacing: 0em;
+    text-shadow: 2px 2px 15px #e6dfdf;
+    -webkit-text-stroke: 1px black;
+}
+
+.header-top-text-two {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 74px;
+    font-weight: 400;
+    line-height: 74px;
+    letter-spacing: 0em;
+    color: var(--orange-color);
+    text-shadow: 2px 2px 15px #e6dfdf;
+}
+
+.header-left-section>p {
+    color: white;
+    font-size: 30px;
+}
+
+.header-btn {
+    background-color: #F48400;
+    border-radius: 12.5px;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    border: none;
+
+}
+
+.header-right-section {
+    display: flex;
+    align-items: center;
+}
+
+.header-right-section .hederImg-one,
+.header-right-section .hederImg-two {
+    width: 400px;
+    /* height: 00px; */
+    top: 20px;
+    z-index: 1;
+}
+
+.header-right-section .hederImg-two {
+    position: absolute;
+    z-index: -0;
+    right: -150px;
+
+}
+
+.bjir-bijir {
+    background: green;
+    height: 50px;
+    width: 100%;
+    margin-top: -80px;
+    filter: blur(100px);
+    box-shadow: 10px 10px rgb(44, 43, 43);
+    z-index: 9;
+}
+
+.head-bjir-bijir {
+    background-image: url("./img/images/Rectangle\ 1\ \(1\).svg");
+    background-size: cover;
+}
+
+.header-right-section {
+    width: 500px;
+}
+
+main {
+    background-image: url('./img/images/1561\ 1.svg');
+    padding-top: 40px;
+}
+
+.titleofMain {
+    font-family: Inter;
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+.titleofadditionText-one {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.titleofadditionText-two {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--orange-color);
+    text-transform: uppercase;
+
+}
+
+.card-container {
+    padding-top: 21px;
+    width: 362px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#card-title {
+    font-family: var(--font-one);
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.card-paragraph {
+    color: rgb(68, 68, 68);
+    font-family: var(--font-one);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.card-btn{
+    background-color: var(--orange-color);
+    padding: 8px 32px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.cards-container{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
 }
